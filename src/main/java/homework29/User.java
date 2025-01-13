@@ -37,7 +37,7 @@ public class User {
     }
 
     public List<User> getFriends() {
-        return friends;
+        return new ArrayList<>(friends);
     }
 
     public Post createPost(String content) {
@@ -47,7 +47,7 @@ public class User {
     }
 
     public List<Post> getPosts() {
-        return posts;
+        return new ArrayList<>(posts);
     }
 
     public void viewFriendsPosts() {
